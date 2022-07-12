@@ -1,0 +1,13 @@
+<li class="dropdown">
+                    <a href="#" class="dropbtn" role="button">
+                        <?= $_SESSION['auth_user']['user_fname']." ".$_SESSION['auth_user']['user_lname']   ?>
+                    </a>
+                    <ul class="dropdown-content">
+                        <li><a class="dropdown-item" href="#">My Profile</a></li>
+                        <li>
+                            <form action="" method="POST">
+                                <button type="submit" name="logout_btn" class="dropdown-item">Logout</button>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
